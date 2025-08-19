@@ -144,7 +144,7 @@ body {
 
 .text7 {
   position: absolute;
-  bottom: 45%;
+  bottom: 55%;
   right: 20%;
 
   font-size: 30px;
@@ -224,9 +224,9 @@ body {
 .text15{
   position: absolute;
   bottom: 7%;
-  right: 10%;
+  right: 5%;
 
-  font-size: 17px;
+  font-size: 15px;
   font-family: 'Amiri';
   color: azure;
   text-decoration: none;
@@ -235,19 +235,7 @@ body {
 .text16{
   position: absolute;
   bottom: 3%;
-  right: 10%;
-
-  font-size: 13px;
-  font-family: 'Amiri';
-  color: azure;
-  text-decoration: none;
-  text-align: center;
-}
-
-.text17{
-  position: absolute;
-  bottom: 3%;
-  right: 70%;
+  right: 5%;
 
   font-size: 13px;
   font-family: 'Amiri';
