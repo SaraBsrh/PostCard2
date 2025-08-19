@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Container that holds 4 pages side by side */
+.scroll-container {
+  display: flex;
+  width: 400vw; /* 4 pages */
+  transition: transform 1s ease;
+}
+
+/* Each page full screen */
+.page {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: rgb(134, 114, 89);
+}
+
+/* Fabrics */
+.fabric1 {
+  position: absolute;
+  width: 300vw;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-1%);
+  z-index: 1;
+}
+.fabric2 {
+  position: absolute;
+  width: 300vw;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(1%);
+  z-index: 2;
+}
+
+/* Bow */
+.bow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 300px;
+}
+
+/* Final page styling */
+#page4 {
+    background: url("IMG_6499.JPEG") center/cover no-repeat;
+    color: white; /* text will show up nicely */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page4 {
+  position: relative;
+}
+* تنظیمات کلی */
+.text-container {
+ position: relative;
+ width: 100vw;
+ height: 100vh;
+ overflow: hidden;
+}
+
+/* فاصله بین خطوط اول تا سوم 1.5 */
+.text1 {
+  position: absolute;
+  bottom: 90%;
+  right: 40%;
+
+  font-size: 20px;
+  font-family: 'Gulzar';
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+}
+.text2 {
+  position: absolute;
+  bottom: 86%;
+  right: 37%;
+
+  font-size: 24px;
+  font-family: 'Dancing Script';
+  color: azure;
+  text-decoration: underline;
+  text-align: center;
+}
+.text3 {
+    position: absolute;
+    bottom: 83%;
+    right: 41%;
+  
+    font-size: 20px;
+    font-family: 'Dancing Script';
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+  }
+
+/* گروه دوم */
+.text4 {
+  position: absolute;
+  bottom: 60%;
+  right: 10%;
+
+  font-size: 70px;
+  font-family: 'Gulzar';
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+}
+.text5 {
+  position: absolute;
+  bottom: 58%;
+  right: 35%;
+
+  font-size: 65px;
+  font-family: 'Gulzar';
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+}
+.text6 {
+  position: absolute;
+  bottom: 55%;
+  right: 45%;
+
+  font-size: 70px;
+  font-family: 'Gulzar';
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+}
+
+.text7 {
+  position: absolute;
+  bottom: 45%;
+  right: 20%;
+
+  font-size: 30px;
+  font-family: 'Gulzar';
+  color: azure;
+  text-decoration:dashed;
+  text-align: center;
+}
+.text8 {
+  position: absolute;
+  bottom: 32%;
+  right: 18%;
+
+  font-size: 20px;
+  font-family: 'Gulzar';
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+}
+.text9 {
+  position: absolute;
+  bottom: 23%;
+  right: 20%;
+
+  font-size: 27px;
+  font-family: 'Amiri';
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+}
+.text10 {
+  position: absolute;
+  bottom: 23%;
+  right: 50%;
+
+  font-size: 27px;
+  font-family: 'Amiri';
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+}
+
+.text12 {
+  position: absolute;
+  bottom: 18%;
+  right: 20%;
+
+  font-size: 20px;
+  font-family: 'Amiri';
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+}
+.text13{
+  position: absolute;
+  bottom: 15%;
+  right: 27%;
+
+  font-size: 15px;
+  font-family: 'Amiri';
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+}
+.text14{
+  position: absolute;
+  bottom: 16%;
+  right: 53%;
+
+  font-size: 20px;
+  font-family: 'Amiri';
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+}
+
+.text15{
+  position: absolute;
+  bottom: 7%;
+  right: 10%;
+
+  font-size: 17px;
+  font-family: 'Amiri';
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+}
+.text16{
+  position: absolute;
+  bottom: 3%;
+  right: 10%;
+
+  font-size: 13px;
+  font-family: 'Amiri';
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+}
+
+.text17{
+  position: absolute;
+  bottom: 3%;
+  right: 70%;
+
+  font-size: 13px;
+  font-family: 'Amiri';
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+}
+
+.appear {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+.appear.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#play-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+}
+#play-btn:hover {
+  background: rgba(255, 255, 255, 1);
+}
